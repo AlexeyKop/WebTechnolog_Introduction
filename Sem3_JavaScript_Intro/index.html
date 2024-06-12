@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sem3_JS_Intro</title>
+	</head>
+	<body>
+    <!-- ДЗ: Создать страницу, которая спрашивает имя у пользователя и выводит его с помощью функции. -->
+
+    <script language="JavaScript">
+			let yuorname = prompt("Как Вас зовут?", "Your name");
+			alert(yuorname);
+		</script>
+
+		<!--  Задание №1 - с помощью JavaScript создать всплывающее диалоговое окно с произвольным текстом: например, «Привет, Мир!». -->
+		<p>Это обычный HTML документ</p>
+
+		<script language="JavaScript">
+			alert("Привет, мир!!!");
+		</script>
+
+		<!-- Задание №2 - вычислить результат 158+2 и вывести значение выражения в диалоговое окно. -->
+		<script language="JavaScript">
+			alert(`результат: ${158 + 2}`);
+		</script>
+
+		<!-- Задание №3 - передать строковый параметр в диалоговое окно. Например,
+		вывести «Привет, Алевтина!», где имя — это передаваемый параметр. -->
+
+		<script language="JavaScript">
+			let name = "Alex";
+			alert(`Hi, ${name}!`);
+		</script>
+
+		<!-- Задание №4 - вызвать диалоговое окно с заголовком «Как вас зовут?» и подсказкой «Имя» в поле ввода. Затем вывести имя, которое ввели -->
+
+		<script language="JavaScript">
+			let test = prompt("Как Вас зовут?", "Имя");
+			alert(test);
+		</script>
+
+		<!-- Задание №5 - написать функцию, выводящую в диалоговом окне текст и переменную. Например, «Привет, Алевтина». Где «Алевтина» — это внешняя переменная. -->
+		<script language="JavaScript">
+			let userName = "Aleks";
+
+			function showMessage() {
+				let message = "Hi, " + userName;
+				alert(message);
+			}
+
+			showMessage();
+		</script>
+
+		<!-- Задание №6 - вывести на экран в диалоговом окне текст с сообщением “Вы уверены?” и кнопками «ОК» , «Отмена». -->
+		<script>
+			if (confirm("Вы уверены?")) {
+				alert("Мы рады, что Вы уверены!");
+			} else {
+				alert("Жаль, что Вы не уверены...");
+			}
+		</script>
+
+		<script>
+			let age = prompt("Сколько Вам лет?");
+
+			switch (age) {
+				case "18":
+					alert("Вы совершеннолетний!");
+					break;
+				case "10":
+					alert("Вам надо учить уроки...");
+					break;
+				case "30":
+					alert("Завтра на работу...");
+					break;
+				default:
+					alert("Мы не знаем, что Вам делать");
+					break;
+			}
+		</script>
+	</body>
+</html>
